@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad Ahmad | Tech & Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0f1a;
+            --surface: #161b2b;
+            --accent: #3b82f6; 
+            --text-main: #ffffff;
+            --text-dim: #94a3b8;
+            --border: #2d3748;
+        }
+
+        [data-theme="light"] {
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --accent: #2563eb;
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand { font-weight: 600; font-size: 1.2rem; text-decoration: none; color: var(--text-main); letter-spacing: 1px; }
+        .nav-right { display: flex; align-items: center; gap: 25px; }
+        .nav-right a { color: var(--text-dim); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+        .nav-right a:hover { color: var(--accent); }
+
+        #theme-toggle {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .hero { padding: 120px 10% 80px; max-width: 1100px; margin: 0 auto; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 20px; font-weight: 600; line-height: 1.1; }
+        .hero p { color: var(--text-dim); font-size: 1.15rem; max-width: 600px; margin-bottom: 40px; }
+
+        .btn { 
+            background: var(--accent); 
+            color: #ffffff !important; 
+            padding: 14px 32px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 500; 
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        .section-padding { padding: 80px 10%; max-width: 1100px; margin: 0 auto; }
+        .section-title { font-size: 1.8rem; margin-bottom: 40px; color: var(--text-main); font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .project-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+        .box-container {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+
+        footer {
+            padding: 60px 10%;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 0 5%; }
+            .nav-right a { display: none; }
+            .hero, .section-padding { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="brand">JAWAD AHMAD</a>
+    <div class="nav-right">
+        <a href="#projects">Work</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle">Light / Dark</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Engineering the Next <br> Phase of the Web.</h1>
+    <p>Independent developer focused on the intersection of neural networks, high-performance web systems, and modern automation.</p>
+    <a href="#projects" class="btn">Explore Projects</a>
+</section>
+
+<section class="section-padding" id="projects">
+    <h2 class="section-title">Selected Repositories</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Neural-Core-V1</h3>
+            <p>Implementing attention-based models for edge computing and localized data processing.</p>
+        </div>
+        <div class="project-card">
+            <h3>Auto-Synth-Engine</h3>
+            <p>A modular engine designed for rapid deployment of synthetic media environments.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" id="community">
+    <h2 class="section-title">Community Board</h2>
+    <div class="box-container">
+        <h3 style="margin-top:0;">Discuss AI Trends & Decisions</h3>
+        <p style="color: var(--text-dim); margin-bottom: 30px;">
+            Join the conversation. Post your thoughts on the latest AI tools, share your research, or ask questions below.
+        </p>
+        <div class="giscus">
+            <p style="color: var(--accent); font-style: italic;">[Community comments will load here]</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" id="contact">
+    <h2 class="section-title">Start a Conversation</h2>
+    <div class="box-container" style="text-align: center; padding: 60px 20px;">
+        <p style="color: var(--text-dim); margin-bottom: 30px;">I'm currently open to new projects and technical research collaborations.</p>
+        <a href="mailto:for.working.p.8080@gmail.com?subject=Inquiry%20from%20Portfolio" class="btn">Send an Email</a>
+    </div>
+</section>
+
+<footer>
+    <div>&copy; 2026 Jawad Ahmad. All Rights Reserved.</div>
+    <div>System Status: Operational</div>
+</footer>
+
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if (savedTheme === 'light') body.setAttribute('data-theme', 'light');
+
+    toggleBtn.addEventListener('click', () => {
+        if (body.getAttribute('data-theme') === 'light') {
+            body.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+
+</body>
+</html>
