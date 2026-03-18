@@ -34,12 +34,12 @@
         .container { max-width: 1000px; margin: 0 auto; padding: 0 25px; }
         
         .hero { padding: 100px 8% 60px; text-align: center; }
-        .hero h1 { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 800; margin-bottom: 20px; background: linear-gradient(90deg, #3b82f6, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero h1 { font-size: clamp(2.2rem, 7vw, 3.8rem); font-weight: 800; margin-bottom: 20px; background: linear-gradient(90deg, #3b82f6, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
         .ai-section { margin-bottom: 80px; border-bottom: 1px solid var(--border); padding-bottom: 40px; }
-        .ai-section h2 { font-size: 2rem; color: var(--accent); margin-bottom: 20px; }
+        .ai-section h2 { font-size: 1.8rem; color: var(--accent); margin-bottom: 20px; }
         
-        .img-container { width: 100%; height: 450px; overflow: hidden; border-radius: 20px; margin-bottom: 25px; border: 1px solid var(--border); background: #1a202c; }
+        .img-container { width: 100%; height: 350px; overflow: hidden; border-radius: 20px; margin-bottom: 25px; border: 1px solid var(--border); background: #1a202c; }
         .ai-image { width: 100%; height: 100%; object-fit: cover; }
 
         .desc { font-size: 1.1rem; color: var(--text-dim); text-align: justify; }
@@ -64,309 +64,164 @@
 
 <section class="hero">
     <h1>24 Pillars of AI <br> Engineering & Future</h1>
-    <p>A complete technical exploration by Jawad Ahmad.</p>
+    <p>Complete documentation by Jawad Ahmad.</p>
 </section>
 
 <div class="container">
 
     <section class="ai-section">
         <h2>1. Generative AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/17483848/pexels-photo-17483848.jpeg" class="ai-image" alt="Gen AI"></div>
-        <p class="desc">
-            <strong>Generative AI</strong> is a type of artificial intelligence that can create new content, such as text, images, or audio, by learning from existing data.
-            <span class="more-text">
-                Unlike traditional AI that simply analyzes data, GenAI uses neural networks to produce original outputs that mimic human creativity. This technology is powering tools like ChatGPT and Midjourney, transforming how we write, design, and code. In 2026, it has become an essential partner for creators, enabling rapid prototyping and personalized content at an unprecedented scale across the globe.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Generative AI</strong> creates new content like text and images. <span class="more-text">It uses neural networks to mimic human creativity. This technology powers tools like ChatGPT and Midjourney, transforming writing and design. In 2026, it is a key partner for all digital creators globally.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>2. Natural Language Processing</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" class="ai-image" alt="NLP"></div>
-        <p class="desc">
-            <strong>NLP</strong> is the field of AI that focuses on the interaction between computers and human language.
-            <span class="more-text">
-                It enables machines to read, understand, and derive meaning from languages in a way that is valuable. Modern NLP uses transformer models to grasp context, sentiment, and even sarcasm. This is what allows virtual assistants to talk back to you and translation apps to work in real-time. By 2026, NLP has evolved to handle hundreds of dialects, breaking down communication barriers worldwide.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>NLP</strong> helps computers understand human speech and text. <span class="more-text">Modern NLP uses transformer models to grasp context and sentiment. It allows for real-time translation and smart virtual assistants. By 2026, language barriers are vanishing due to advanced NLP.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>3. Computer Vision</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg" class="ai-image" alt="Vision"></div>
-        <p class="desc">
-            <strong>Computer Vision</strong> allows machines to identify and process images and videos in the same way that human vision does.
-            <span class="more-text">
-                It is the technology behind facial recognition, self-driving cars, and automated medical diagnostics. By analyzing pixels and patterns, AI can detect objects, track movement, and understand the physical environment. In 2026, computer vision has become so precise that it can detect microscopic structural flaws in buildings or early signs of disease in medical scans with 99% accuracy.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1527430253228-e926e8c27599?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Computer Vision</strong> gives machines the ability to "see". <span class="more-text">It powers facial recognition and self-driving cars. In 2026, it detects microscopic flaws in infrastructure and medical issues with 99% accuracy.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
-        <h2>4. AI and the Job Market</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" class="ai-image" alt="Jobs"></div>
-        <p class="desc">
-            The integration of <strong>AI into the workforce</strong> is shifting the focus from manual tasks to strategic oversight.
-            <span class="more-text">
-                While some roles are being automated, AI is creating new categories of employment, such as AI trainers and maintenance engineers. The key to success in 2026 is "AI Fluency"—the ability to work alongside smart machines to increase productivity. Businesses now prioritize human-centric skills like empathy and complex problem-solving, as AI handles the data-heavy aspects of the professional world.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <h2>4. AI in the Job Market</h2>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>AI Workforce</strong> integration shifts focus to strategic oversight. <span class="more-text">While automation handles data, humans focus on creativity and empathy. Learning to work with AI is now the most vital career skill in 2026.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>5. Cybersecurity AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" class="ai-image" alt="Security"></div>
-        <p class="desc">
-            <strong>Cybersecurity AI</strong> uses machine learning to proactively detect and neutralize digital threats in real-time.
-            <span class="more-text">
-                Unlike traditional software that waits for a virus to be identified, AI monitors network behavior to spot anomalies that suggest an attack is starting. This "zero-trust" approach is vital for protecting sensitive banking and government data. In 2026, AI-driven security is the primary defense against sophisticated hackers, using predictive modeling to patch vulnerabilities before they can even be exploited.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Cyber AI</strong> proactively neutralizes digital threats. <span class="more-text">It monitors network behavior to spot anomalies. This zero-trust approach protects global banking systems and private data from hackers in 2026.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>6. Healthcare AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/7088530/pexels-photo-7088530.jpeg" class="ai-image" alt="Health"></div>
-        <p class="desc">
-            <strong>Healthcare AI</strong> is transforming medicine by enabling faster diagnosis and personalized treatment plans.
-            <span class="more-text">
-                AI algorithms can analyze patient records and genetic data to predict which treatments will be most effective for a specific person. It also accelerates drug discovery by simulating chemical reactions, reducing the time to bring new cures to market. By 2026, AI assistants are standard in hospitals, helping doctors manage surgeries and providing patients with 24/7 personalized health monitoring.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Health AI</strong> enables faster diagnosis and personalized care. <span class="more-text">It analyzes genetic data to find the best cures. In 2026, AI assistants help doctors in surgeries and monitor patients 24/7.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>7. Fintech AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg" class="ai-image" alt="Finance"></div>
-        <p class="desc">
-            <strong>Fintech AI</strong> optimizes financial services by automating trading, credit scoring, and fraud detection.
-            <span class="more-text">
-                Machine learning models analyze millions of transactions per second to catch suspicious activity that humans would miss. In the world of investing, AI bots execute trades at light speed based on market trends and news sentiment. By 2026, AI has made banking more accessible, providing automated financial advice to millions and ensuring that global markets remain stable and efficient.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1611974717482-480927918f8e?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Fintech AI</strong> optimizes trading and fraud detection. <span class="more-text">It processes transactions at light speed to catch theft. By 2026, AI provides automated financial advice to millions, stabilizing global markets.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>8. Edge AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" class="ai-image" alt="Edge"></div>
-        <p class="desc">
-            <strong>Edge AI</strong> involves processing data locally on a device rather than sending it to a centralized cloud.
-            <span class="more-text">
-                This technology is crucial for applications that require instant response times, such as drones and smart home security. By keeping data on the device, Edge AI significantly improves user privacy and reduces bandwidth costs. In 2026, it is the backbone of the Internet of Things (IoT), allowing billions of smart devices to operate independently and securely without a constant internet connection.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Edge AI</strong> processes data locally on devices. <span class="more-text">This ensures privacy and speed for drones and smart homes. In 2026, it's the backbone of billions of smart gadgets working without cloud delay.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>9. Recommendation Engines</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/5077067/pexels-photo-5077067.jpeg" class="ai-image" alt="Recs"></div>
-        <p class="desc">
-            <strong>Recommendation Engines</strong> are algorithms that predict user preferences to suggest products, movies, or content.
-            <span class="more-text">
-                Used by giants like Amazon and Netflix, these systems learn from your behavior to keep you engaged. While they improve the user experience by filtering noise, they also raise concerns about "filter bubbles." In 2026, these engines have become hyper-personalized, not just suggesting what you like, but what you *need* for your health, education, and career growth based on your life goals.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>AI Filters</strong> suggest content based on your needs. <span class="more-text">Beyond entertainment, these engines now suggest career paths and health goals in 2026, filtering the noise of the internet.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>10. Climate AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg" class="ai-image" alt="Climate"></div>
-        <p class="desc">
-            <strong>Climate AI</strong> is used to model weather patterns and optimize energy consumption to fight global warming.
-            <span class="more-text">
-                AI helps scientists track deforestation and ocean temperature changes with extreme precision. It also manages smart grids, ensuring that renewable energy from solar and wind is used where it is needed most. By 2026, AI is a key player in the "Green Revolution," helping cities reduce their carbon footprint and creating early-warning systems for natural disasters like floods and wildfires.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Climate AI</strong> models weather to fight global warming. <span class="more-text">It tracks deforestation and manages renewable energy grids. In 2026, it's a primary tool for protecting the environment and predicting disasters.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>11. AI Ethics</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg" class="ai-image" alt="Ethics"></div>
-        <p class="desc">
-            <strong>AI Ethics</strong> is the framework of guidelines ensuring that AI technologies are developed and used responsibly.
-            <span class="more-text">
-                It addresses critical issues like algorithmic bias, data privacy, and the potential for AI-driven misinformation. As AI makes more life-altering decisions, transparency becomes essential. In 2026, international laws require AI systems to be "fair by design," meaning they must be tested for prejudice and must allow humans to intervene in any automated decision-making process to ensure safety.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>AI Ethics</strong> ensures technology is developed responsibly. <span class="more-text">It addresses bias and data privacy. In 2026, international laws require AI systems to be transparent and fair to all humans.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>12. Humanoid Robotics</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/8386444/pexels-photo-8386444.jpeg" class="ai-image" alt="Robots"></div>
-        <p class="desc">
-            <strong>Humanoid Robots</strong> are AI-driven machines designed to interact with the world and assist people in human environments.
-            <span class="more-text">
-                With advanced sensors and motors, these robots can perform tasks like cooking, cleaning, and heavy lifting in warehouses. They are becoming common in elderly care and hazardous environments where humans cannot safely go. By 2026, humanoid robots have improved their "soft skills," using AI to understand social cues and helping bridge the labor gap in industries that require physical presence.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1546776230-bb862b48a395?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Humanoid Robots</strong> assist in homes and factories. <span class="more-text">They perform tasks like cleaning and heavy lifting. By 2026, they understand social cues, helping elderly citizens and filling labor gaps.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>13. Quantum AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg" class="ai-image" alt="Quantum"></div>
-        <p class="desc">
-            <strong>Quantum AI</strong> is the combination of quantum computing and machine learning to achieve massive processing power.
-            <span class="more-text">
-                While traditional computers use bits (0s and 1s), quantum computers use qubits, allowing them to calculate complex problems in seconds. This will unlock new levels of AI intelligence, especially in material science and cryptography. In 2026, we are seeing the first practical applications of Quantum AI, enabling us to simulate human biology at a molecular level for the first time in history.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Quantum AI</strong> uses massive processing power for science. <span class="more-text">It solves problems in seconds that used to take years. In 2026, it's simulating human biology at the molecular level for new cures.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>14. AGI (The Final Goal)</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/6153738/pexels-photo-6153738.jpeg" class="ai-image" alt="AGI"></div>
-        <p class="desc">
-            <strong>Artificial General Intelligence (AGI)</strong> is a hypothetical AI that can understand and learn any intellectual task a human can.
-            <span class="more-text">
-                Unlike Narrow AI (like chess programs), AGI would possess self-awareness and general problem-solving skills across all domains. It is considered the "Holy Grail" of computer science. In 2026, researchers are still debating when AGI will arrive, but the rapid progress in multi-modal models suggests we are closer than ever to creating a machine that truly "thinks" for itself.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>AGI</strong> is a machine that can learn any human task. <span class="more-text">Unlike narrow AI, AGI has general intelligence. In 2026, researchers are closer than ever to creating machines that truly think for themselves.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>15. AI in Agriculture</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/2516423/pexels-photo-2516423.jpeg" class="ai-image" alt="Agri"></div>
-        <p class="desc">
-            <strong>Agri-Tech AI</strong> uses drones, sensors, and machine learning to optimize crop yields and soil health.
-            <span class="more-text">
-                AI can predict pest outbreaks and tell farmers exactly where to apply water or fertilizer, reducing waste and environmental damage. Automated tractors and harvesting robots are also becoming standard. By 2026, AI-driven farming is helping the world feed its growing population while using significantly fewer natural resources, making the global food supply chain more resilient to climate change.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Agri-AI</strong> optimizes soil health and crop yields. <span class="more-text">Drones and sensors reduce water waste. By 2026, smart farming feeds billions while using fewer natural resources.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
-        <h2>16. AI in Space Exploration</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/586030/pexels-photo-586030.jpeg" class="ai-image" alt="Space"></div>
-        <p class="desc">
-            <strong>Space AI</strong> enables rovers and satellites to operate independently in environments where human communication is delayed.
-            <span class="more-text">
-                AI systems on Mars rovers can navigate terrain and identify scientific targets without waiting for instructions from Earth. It is also used to process massive amounts of data from telescopes to find new planets. In 2026, AI is a critical component of lunar bases, managing life-support systems and helping astronauts perform complex experiments in the deep silence of space.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <h2>16. AI in Space</h2>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Space AI</strong> navigates rovers on distant planets. <span class="more-text">It identifies scientific targets without Earth's help. In 2026, it manages life-support systems on lunar bases for astronauts.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>17. Emotional AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/4559592/pexels-photo-4559592.jpeg" class="ai-image" alt="Emotion"></div>
-        <p class="desc">
-            <strong>Emotional AI</strong>, also known as Affective Computing, allows machines to detect and respond to human emotions.
-            <span class="more-text">
-                By analyzing facial expressions, tone of voice, and body language, AI can determine if a user is stressed, happy, or frustrated. This technology is being used in education to help AI tutors adapt to a student's mood. By 2026, Emotional AI is also found in customer service and mental health apps, providing a more empathetic and personalized experience for users who need support.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Emotion AI</strong> detects and responds to human feelings. <span class="more-text">It analyzes facial expressions to provide support. In 2026, it tutors students and assists in mental health apps empathetically.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>18. AI in Gaming</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/7915227/pexels-photo-7915227.jpeg" class="ai-image" alt="Gaming"></div>
-        <p class="desc">
-            <strong>Gaming AI</strong> creates living virtual worlds where non-player characters (NPCs) behave and speak dynamically.
-            <span class="more-text">
-                With generative AI, game characters can now have unscripted conversations with players, making every playthrough unique. AI is also used to generate vast, realistic landscapes and to balance game difficulty in real-time. In 2026, AI has turned video games into deeply immersive simulations where the environment and the story react to every subtle choice the player makes.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Game AI</strong> creates dynamic, living virtual worlds. <span class="more-text">Characters have unscripted conversations with players. In 2026, games are immersive simulations that react to every player choice.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>19. Swarm Intelligence</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/378268/pexels-photo-378268.jpeg" class="ai-image" alt="Swarm"></div>
-        <p class="desc">
-            <strong>Swarm Intelligence</strong> is inspired by the collective behavior of decentralized, self-organized systems like ant colonies or bird flocks.
-            <span class="more-text">
-                In robotics, this involves deploying hundreds of small robots that work together to perform tasks like search-and-rescue or warehouse sorting. If one robot fails, the others adapt to complete the mission. By 2026, swarm intelligence is used in "Smart Cities" to manage traffic flow perfectly and in environmental science to clean up oceans by coordinating thousands of tiny aquatic drones.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Swarm AI</strong> coordinates hundreds of small robots. <span class="more-text">They work together for search-and-rescue. By 2026, it manages city traffic and ocean cleanup drones perfectly.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>20. Legal Tech AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/5668481/pexels-photo-5668481.jpeg" class="ai-image" alt="Legal"></div>
-        <p class="desc">
-            <strong>Legal AI</strong> helps professionals analyze thousands of documents for evidence and provides automated contract reviews.
-            <span class="more-text">
-                This technology makes the justice system faster and more accessible by automating the tedious parts of legal research. AI can also predict the likely outcome of court cases based on historical data. By 2026, many simple legal disputes are settled through AI-driven mediation, saving time and money for the public while ensuring that lawyers can focus on high-level litigation and justice.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Legal AI</strong> automates document research for justice. <span class="more-text">It settles simple disputes quickly. By 2026, AI mediation saves time for the public while lawyers focus on complex litigation.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
-        <h2>21. Deepfake Technology</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/6153359/pexels-photo-6153359.jpeg" class="ai-image" alt="Deepfake"></div>
-        <p class="desc">
-            <strong>Deepfake Technology</strong> uses AI to create highly realistic synthetic media, including audio and video of people.
-            <span class="more-text">
-                While it has creative uses in film, it also poses a threat to digital truth. This has led to the development of "Detection AI," which can spot microscopic errors in synthetic videos. In 2026, the battle between deepfake creators and detectors is a major part of internet safety, requiring all of us to be more critical of the content we consume and trust only verified sources.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <h2>21. Deepfake Tech</h2>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Deepfake Tech</strong> creates realistic synthetic media. <span class="more-text">It challenges digital truth. In 2026, Detection AI is vital to verify content and protect society from misinformation.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
-        <h2>22. AI in Music & Art</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg" class="ai-image" alt="Art"></div>
-        <p class="desc">
-            <strong>AI in the Arts</strong> provides new tools for musicians and painters to push the boundaries of their creativity.
-            <span class="more-text">
-                AI can generate complex musical scores or act as a digital paintbrush that learns an artist's style. This has led to a new genre of "Human-AI Collaborative Art." By 2026, AI is a standard instrument in recording studios, helping artists create sounds that were previously impossible to produce and allowing non-musicians to express their feelings through high-quality music creation.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <h2>22. AI Music & Art</h2>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Art AI</strong> provides new tools for human creativity. <span class="more-text">Artists and AI collaborate to create unique sounds and styles. In 2026, AI is a standard instrument in all recording studios.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>23. Nano-AI</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/5473182/pexels-photo-5473182.jpeg" class="ai-image" alt="Nano"></div>
-        <p class="desc">
-            <strong>Nano-AI</strong> is the integration of intelligence into microscopic nanotechnology to perform tasks inside the human body or materials.
-            <span class="more-text">
-                Nanobots equipped with AI could one day repair cells or target cancer with surgical precision from the inside. This technology is also used to create "smart materials" that can change their properties based on the environment. In 2026, Nano-AI is in the early stages of medical trials, promising a future where we can treat diseases at a molecular level without the need for traditional surgery.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1532187863486-abf51ad9f69d?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>Nano-AI</strong> works at the microscopic level inside bodies. <span class="more-text">Nanobots repair cells and target cancer precisely. In 2026, it promises to treat diseases without traditional surgery.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="ai-section">
         <h2>24. Explainable AI (XAI)</h2>
-        <div class="img-container"><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" class="ai-image" alt="XAI"></div>
-        <p class="desc">
-            <strong>Explainable AI</strong> is a field focused on making the internal logic of AI systems transparent and understandable to humans.
-            <span class="more-text">
-                As AI becomes more complex, it often acts as a "black box," making it hard to trust. XAI frameworks force the machine to explain *why* it made a certain decision. This is vital in fields like medicine and law. By 2026, XAI is a legal requirement for any high-stakes AI system, ensuring that technology remains under human oversight and that we can always verify its reasoning.
-            </span>
-            <button class="read-more-btn" onclick="toggleText(this)">Read More...</button>
-        </p>
+        <div class="img-container"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc4b?auto=format&fit=crop&w=800&q=60" class="ai-image"></div>
+        <p class="desc"><strong>XAI</strong> makes machine logic understandable to humans. <span class="more-text">It ensures AI transparency in medicine and law. By 2026, XAI is a legal requirement for trust in high-stakes decisions.</span><button class="read-more-btn" onclick="toggleText(this)">Read More...</button></p>
     </section>
 
     <section class="post-box">
         <h2>Your Final Verdict?</h2>
-        <p>You've explored the entire 24-part guide. Is AI our savior or a risk we must control?</p>
         <a href="mailto:for.working.p.8080@gmail.com" class="btn">SUBMIT YOUR PERSPECTIVE</a>
     </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2026 Jawad Ahmad | Professional AI Documentation Portal</p>
+    <p>&copy; 2026 Jawad Ahmad | Professional AI Documentation</p>
 </footer>
 
 <script>
